@@ -1,0 +1,10 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    compile "org.nd4j:nd4j-native-platform:1.0.0-beta3"
+    compile group: 'org.json', name: 'json', version: '20180813'
+}
+
+sourceCompatibility = "7"
+targetCompatibility = "7"
